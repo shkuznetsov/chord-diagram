@@ -153,11 +153,5 @@ window.chordDiagram = function ( frets, fingers )
 		container.appendChild(footer_row);
 	}
 
-	if ('undefined' != typeof fretno_cell)
-	{
-		//alert(window.getComputedStyle(container).width);
-	}
-	console.log(window.getComputedStyle(container).getPropertyValue("width"));
-
 	return container;
 }
