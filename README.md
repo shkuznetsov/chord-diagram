@@ -4,7 +4,7 @@ A tiny (~800 bytes when minified and gzipped) function written in pure javascrip
 
 ## Quick start
 
-Download a [JS file](https://github.com/shkuznetsov/chord-diagram/blob/master/js/chord-diagram.js) ([minified](https://github.com/shkuznetsov/chord-diagram/blob/master/js/chord-diagram.min.js)) and a [CSS stylesheet](https://github.com/shkuznetsov/chord-diagram/blob/master/css/chord-diagram.css) ([minified](https://github.com/shkuznetsov/chord-diagram/blob/master/css/chord-diagram.min.css)), drop them onto your page. To create a ```div``` containing DOM structure for **C** chord call:
+Download a [JS file](https://github.com/shkuznetsov/chord-diagram/blob/master/js/chord-diagram.js) ([minified](https://raw.github.com/shkuznetsov/chord-diagram/master/js/chord-diagram.min.js)) and a [CSS stylesheet](https://github.com/shkuznetsov/chord-diagram/blob/master/css/chord-diagram.css) ([minified](https://raw.github.com/shkuznetsov/chord-diagram/master/css/chord-diagram.min.css)), drop them onto your page. To create a ```div``` containing DOM structure for **C** chord call:
 ```
 var diagram = chordDiagram([-1,3,2,0,1,0], [-1,3,2,-1,1,-1]);
 ```
@@ -15,7 +15,7 @@ document.body.appendChild(diagram);
 
 That will produce something like this:
 
-![C chord diagram goes here](https://github.com/shkuznetsov/chord-diagram/blob/master/demo/C.png)
+![C chord diagram goes here](https://raw.github.com/shkuznetsov/chord-diagram/master/demo/C.png)
 
 ## Paramters
 
