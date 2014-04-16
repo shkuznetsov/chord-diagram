@@ -31,37 +31,37 @@
         <hr>
 
         <section id="main_content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h1>
+<a name="chord-diagram-generator-in-pure-js" class="anchor" href="#chord-diagram-generator-in-pure-js"><span class="octicon octicon-link"></span></a>Chord diagram generator in pure JS</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>A tiny (~750 bytes when minified and gzipped) function written in pure javascript (no jQuery or other dependencies) which draws basic guitar chord diagrams in HTML/CSS. Accepts an array of fret positions (mandatory) and an array of finger numbers (optional). Automatically detects barre if more than one string is picked on the same fret with the same finger.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h2>
+<a name="quick-start" class="anchor" href="#quick-start"><span class="octicon octicon-link"></span></a>Quick start</h2>
+
+<p>Download a <a href="https://github.com/shkuznetsov/chord-diagram/blob/master/js/chord-diagram.js">JS file</a> (<a href="https://raw.github.com/shkuznetsov/chord-diagram/master/js/chord-diagram.min.js">minified</a>, <a href="https://raw.github.com/shkuznetsov/chord-diagram/master/js/chord-diagram.min.js.gz">gzipped</a>) and a <a href="https://github.com/shkuznetsov/chord-diagram/blob/master/css/chord-diagram.css">CSS stylesheet</a> (<a href="https://raw.github.com/shkuznetsov/chord-diagram/master/css/chord-diagram.min.css">minified</a>, <a href="https://raw.github.com/shkuznetsov/chord-diagram/master/css/chord-diagram.min.css.gz">gzipped</a>), drop them onto your page. To create a <code>div</code> containing DOM structure for <strong>C</strong> chord call:</p>
+
+<pre><code>var diagram = chordDiagram([-1,3,2,0,1,0], [-1,3,2,-1,1,-1]);
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Then to attach it to your document, call:</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<pre><code>document.body.appendChild(diagram);
+</code></pre>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Above will produce something like this:</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><img src="https://raw.github.com/shkuznetsov/chord-diagram/master/demo/C.png" alt="C chord diagram goes here"></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>
+<a name="arguments" class="anchor" href="#arguments"><span class="octicon octicon-link"></span></a>Arguments</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>You sort of can work it out from the above example, but I will describe it here at some point.</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h2>
+<a name="copyright-and-license" class="anchor" href="#copyright-and-license"><span class="octicon octicon-link"></span></a>Copyright and license</h2>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Doesn't apply. Use it as you wish, but be aware that it may explode and blow your head off or something, so don't come back to me if that happens blah blah blah.</p>
         </section>
 
         <footer>
