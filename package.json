@@ -1,0 +1,10 @@
+{
+	"version": "0.1.0",
+	"name": "chord-diagram",
+	"title": "Chord Diagram",
+	"description": "Guitar chord diagram JS/CSS generator",
+	"homepage": "https://github.com/shkuznetsov/chord-diagram",
+	"author": {
+		"name": "Alexander Kuznetsov"
+	}
+}
